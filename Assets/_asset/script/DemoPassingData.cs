@@ -10,15 +10,15 @@ public class DemoPassingData : MonoBehaviour
 
     private void Start()
     {
-        coin = 1;
-        Debug.Log($"coin: {coin}");
-        Debug.Log($"score: {score}");
-        score += 1;
-        coin += 1;
-        scriptableObjectData.crystal = 10;
+        //coin = 1;
+        //Debug.Log($"coin: {coin}");
+        //Debug.Log($"score: {score}");
+        //score += 1;
+        //coin += 1;
+        //scriptableObjectData.crystal = 10;
 
-        Debug.Log($"coin: {coin}");
-        Debug.Log($"score: {score}");
-        Debug.Log($"crystal: {scriptableObjectData.crystal}");
+        //Debug.Log($"coin: {coin}");
+        //Debug.Log($"score: {score}");
+        //Debug.Log($"crystal: {scriptableObjectData.crystal}");
     }
 }
