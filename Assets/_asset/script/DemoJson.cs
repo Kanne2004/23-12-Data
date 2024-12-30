@@ -36,6 +36,7 @@ public class DemoJson : MonoBehaviour
     [ContextMenu("Save Data")]
     public void SaveData()
     {
+        gameData.firstPlay = DateTime.Now.ToString("dd-MM-yyyy|HH:mm:ss");
         demoGameDataString = JsonUtility.ToJson(gameData);
         PlayerPrefs.SetString(GAME_DATA_KEY, demoGameDataString);
         PlayerPrefs.Save();
@@ -56,7 +57,7 @@ public class GameData
 
     public int gold;
     public UserInfo userinfo;
-    public DateTime firstPlay;
+    public string firstPlay;
     public string version;
     public List<Session> sessions;
 
@@ -71,8 +72,8 @@ public class Session
 [Serializable]
 public class UserInfo
 {
-    public string username;
     public int age;
+    public string userinfo;
     public DateTime dateOfBirth;
     public Sex sex;
 }

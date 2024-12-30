@@ -784,11 +784,14 @@ MonoBehaviour:
   gameData:
     gold: 100
     userinfo:
-      username: kien
-      age: 0
+      age: 12314
+      userinfo: kien
       sex: 0
+    firstPlay: 
     version: 
-    sessions: []
+    sessions:
+    - scores: 010000000200000003000000
+    - scores: 0a000000
   demoGameDataString: 
 --- !u!4 &1740842890
 Transform:
